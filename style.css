@@ -1,0 +1,69 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: 'IBM Plex Serif', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stopWatch {
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+#display {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+#laps {
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  text-align: center;
+}
+
+.lap-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lap-num,
+.lap-diff,
+.lap-time {
+  width: 33.3%;
+}
